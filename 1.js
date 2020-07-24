@@ -84,7 +84,7 @@ zifu.prototype = {
                 // that.over.innerHTML = "游戏结束"
             that.sub.style.display = "block"
             that.over.style.display = "block"
-
+            document.onkeydown = null;
 
         }
         if (that.two) {
@@ -162,21 +162,12 @@ zifu.prototype = {
             //   重新开始
         that.sub.onclick = function() {
 
-
+                that.key();
 
                 var leng = that.divs.length - 1
                 for (var i = leng; i >= 0; i--) {
                     document.body.removeChild(that.divs[i]);
                     that.divs.pop();
-
-
-                    // that.divs.splice(0, 1)
-                    // that.createZifu();
-                    // that.grade = that.grade + 1
-
-                    // that.grade1.innerHTML = that.grade
-                    // break;
-
 
 
                 }
