@@ -120,7 +120,7 @@ zifu.prototype = {
             // var speed2 = document.createElement("input")
             // speed2.placeholder = "请输入速度"
         var num2 = document.createElement("input")
-        num2.placeholder = "请输入字母数量"
+        num2.placeholder = "请输入字母数量(<=7)"
         var sub1 = document.createElement("input")
         sub1.type = "submit"
             // this.speed2 = speed2
